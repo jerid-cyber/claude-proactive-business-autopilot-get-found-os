@@ -52,3 +52,5 @@ anything that contradicts it.
 - Who approves:
 - What can run without asking (for example: drafting, research, internal reports):
 - Spending limit without approval: $0 unless changed here
+- Autopilot policy (mode, T2 permissions, limits, Lessons): kept in `get-found/autopilot.md`
+- Quiet hours and time zone:

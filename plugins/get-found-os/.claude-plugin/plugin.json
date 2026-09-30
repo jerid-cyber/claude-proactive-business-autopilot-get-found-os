@@ -1,21 +1,26 @@
 {
   "name": "get-found-os",
-  "version": "1.0.0",
-  "description": "Get-Found Full OS: All 100 Get-Found skills run by one orchestrator and nine specialist department agents.",
+  "version": "1.1.0",
+  "description": "Get-Found Full OS: All 100 Get-Found skills run by one orchestrator and nine specialist department agents, on a proactive autopilot with authority tiers, shadow mode, verification and learning.",
   "author": {
     "name": "Jerid Wempen",
     "url": "https://titanonerealty.com"
   },
   "license": "PolyForm Internal Use 1.0.0",
   "keywords": [
-    "marketing",
-    "seo",
-    "local-seo",
-    "ai-search",
-    "geo",
     "aeo",
+    "ai-search",
+    "autopilot",
+    "geo",
+    "get-found",
+    "google-business-profile",
     "lead-generation",
-    "small-business",
-    "get-found"
+    "local-seo",
+    "marketing",
+    "marketing-automation",
+    "proactive-agent",
+    "reviews",
+    "seo",
+    "small-business"
   ]
 }

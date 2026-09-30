@@ -5,24 +5,36 @@
     "url": "https://titanonerealty.com"
   },
   "metadata": {
-    "description": "Get-Found OS: a 100-skill AI marketing operating system that helps any business get found in Google, Maps and AI answers, get chosen, and grow.",
-    "version": "1.0.0"
+    "description": "Get-Found OS: the AI marketing department that helps any business get found in Google, Maps and AI answers.",
+    "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "get-found-os",
       "source": "./plugins/get-found-os",
-      "description": "Get-Found Full OS: All 100 Get-Found skills run by one orchestrator and nine specialist department agents.",
-      "version": "1.0.0",
+      "description": "Get-Found Full OS: All 100 Get-Found skills run by one orchestrator and nine specialist department agents, on a proactive autopilot with authority tiers, shadow mode, verification and learning.",
+      "version": "1.1.0",
       "author": {
-        "name": "Jerid Wempen",
-        "url": "https://titanonerealty.com"
+        "name": "Jerid Wempen"
       },
-      "homepage": "https://github.com/YOUR-GITHUB-USERNAME/get-found-os",
-      "repository": "https://github.com/YOUR-GITHUB-USERNAME/get-found-os",
-      "license": "PolyForm Internal Use 1.0.0",
       "category": "marketing",
-      "keywords": ["marketing", "seo", "local-seo", "ai-search", "geo", "aeo", "lead-generation", "small-business", "get-found"]
+      "keywords": [
+        "aeo",
+        "ai-search",
+        "autopilot",
+        "geo",
+        "get-found",
+        "google-business-profile",
+        "lead-generation",
+        "local-seo",
+        "marketing",
+        "marketing-automation",
+        "proactive-agent",
+        "reviews",
+        "seo",
+        "small-business"
+      ],
+      "license": "PolyForm Internal Use 1.0.0"
     }
   ]
 }

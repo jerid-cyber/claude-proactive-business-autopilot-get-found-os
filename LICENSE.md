@@ -1,4 +1,4 @@
-PolyForm Internal Use License 1.0.0
+# PolyForm Internal Use License 1.0.0
 
 Copyright (c) 2026 Jerid Wempen / TitanOne Media.
 

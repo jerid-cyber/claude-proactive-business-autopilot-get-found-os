@@ -1,262 +1,183 @@
-<div align="center">
-
 # Get-Found OS
 
-**A 100-skill AI marketing operating system for Claude.**
-Get found in Google, Google Maps and AI answers — get chosen — and grow.
-
-One orchestrator · nine specialist department agents · 100 ranked skills · one 4-phase method
-
-![Version](https://img.shields.io/badge/version-1.0.0-2563eb)
-![Skills](https://img.shields.io/badge/skills-103-16a34a)
-![Agents](https://img.shields.io/badge/agents-9-9333ea)
-![Claude](https://img.shields.io/badge/Claude-Cowork%20%7C%20Code-d97706)
 ![License: PolyForm Internal Use](https://img.shields.io/badge/license-PolyForm%20Internal%20Use-lightgrey.svg)
-[![Validate](https://github.com/YOUR-GITHUB-USERNAME/get-found-os/actions/workflows/validate.yml/badge.svg)](https://github.com/YOUR-GITHUB-USERNAME/get-found-os/actions/workflows/validate.yml)
 
-**[⬇ Download the plugin](https://github.com/YOUR-GITHUB-USERNAME/get-found-os/releases/latest/download/get-found-os.plugin)** ·
-[Install](#install) · [Quick start](#quick-start) · [How it works](#how-it-works) · [All 100 skills](docs/SKILLS.md)
+**The AI marketing department that helps any business get found in Google, Maps and AI answers, then turns that
+attention into customers.**
 
-</div>
+Get-Found OS is a Claude plugin with 100 marketing skills, 9 specialist department agents, and a command center that
+runs them on a schedule. Built on Jerid Wempen's 4-Phase System: Discovery & Assessment, Architecture & Design,
+Implementation & Deployment, Optimization & Governance.
 
----
-
-## What it is
-
-Get-Found OS turns Claude into a full marketing department for a local or growing business. It is built on
-**Jerid Wempen's 4-Phase System** — *Discovery & Assessment → Architecture & Design → Implementation & Deployment →
-Optimization & Governance* — and applies that method to every channel a buyer (or an AI engine) uses to find a business:
-
-- **Maps & listings** — Google Business Profile, Apple Maps, Bing, directories, NAP consistency, schema and knowledge panel
-- **AI answers** — Share of Model Voice in ChatGPT, Gemini, Perplexity, Claude and Google AI Overviews / AI Mode; correcting wrong facts AI states
-- **Search** — keyword & prompt research, on-page and technical SEO, location pages, topical authority, content refresh
-- **Reviews & proof** — review generation and replies everywhere, case studies, NPS, referrals, crisis response
-- **Social & video** — social search, YouTube SEO, short-form scripts, LinkedIn authority, creators and community
-- **Paid** — Google Ads, Meta Ads, LSA/Yelp, retargeting, retail media, Google Ad Grants
-- **Conversion & sales** — speed-to-lead, AI receptionist, landing pages, offers, pricing pages, nurture, proposals, reactivation
-- **Money & operations** — tracking & attribution, KPI dashboard, LTV/CAC, cash-flow budgeting, compliance, SOPs, platform risk
-
-The **Command Center** keeps a single **Visibility Score (0–100)**, picks the *next best move* with a published formula,
-routes it to the right department agent, and proves the result against a recorded baseline. The **Heartbeat** puts the
-whole system on a daily / weekly / monthly / quarterly schedule.
-
-**Nothing is published, sent, spent or changed in a live account without an explicit yes.**
+Version 1.1.0 · Works in Claude Cowork and Claude Code · [Install guide](INSTALL.md) · [Changelog](CHANGELOG.md) ·
+[License](LICENSE.md)
 
 ---
 
-## What's inside
+## Why it's different
 
-| Component | Count | Details |
+Most marketing tools give you a checklist. Get-Found OS acts like a marketing team that works on a schedule. Each week it
+finds your biggest visibility gap, fixes it, proves the result against a baseline, and moves on to the next one. It
+never publishes, sends or spends without your yes.
+
+## How easy it is to use
+
+You talk to it in plain English. Four sentences take you from install to autopilot:
+
+| Say this | What happens | Your time |
 | --- | --- | --- |
-| Ranked Get-Found skills | **100** | Each runs the full 4-phase method with a KPI target — [full catalog](docs/SKILLS.md) |
-| Core system skills | **3** | `get-found-command-center` (orchestrator), `business-brain-setup` (onboarding), `get-found-heartbeat` (scheduling) |
-| Department agents | **9** | Scout, Mapmaker, Reputation Desk, Publisher, Engineer, Closer, Media Buyer, COO-CFO, Amplifier — [details](docs/AGENTS.md) |
-| Reference files | **3** | Business Brain template, 100-skill routing catalog, Visibility Score rubric |
-| Event-trigger chains | **13** | Automatic skill chains for reviews, traffic drops, new services, slow leads, CPL spikes and more — [details](docs/WORKFLOWS.md) |
-| Scheduled cadences | **4** | Daily, weekly, monthly, quarterly heartbeat prompts |
+| **"Set up Get-Found for my business."** | Researches your website, Google profile, reviews, listings and what AI tools say about you. Then asks one short round of questions for what it couldn't find. Builds your Business Brain. | About 10 minutes |
+| **"Run my Visibility Audit."** | Scores you 0 to 100 across Maps, AI answers, Search, Reviews, Social, Paid and Conversion, with evidence for each score. | About 5 minutes to review |
+| **"Put Get-Found on a schedule."** | Sets up daily, weekly, monthly and quarterly runs in your time zone. | About 5 minutes |
+| **"What's my next best move?"** | Ranks your open gaps by revenue impact and effort and tells you what to do first. | Any time |
 
-### The nine department agents
+After that, most of your job is approving. Each run ends with a report you can read in about 30 seconds: your score
+against baseline, what got done (with proof), what's waiting for your approval, and the next move. You approve many
+items at once ("approve 1, 3, reject 2").
 
-| Agent | Department | Skills | Mission |
-| --- | --- | --- | --- |
-| **Scout** | Research & Intelligence | 8 | Finds where the business is visible, where it's invisible, and what buyers and AI engines actually say |
-| **Mapmaker** | Listings & Entity | 10 | Owns every map, listing, directory and entity record so search engines and AI agree on who the business is |
-| **Reputation Desk** | Reviews, Proof & Referrals | 7 | Keeps ratings fresh, replies to every review, turns happy customers into proof and referrals, contains crises |
-| **Publisher** | Content Engine | 17 | Turns buyer questions into answer-first content that ranks, gets cited by AI and sounds like the business |
-| **Engineer** | Technical & Tracking | 10 | Makes the site fast, crawlable, accessible, machine-readable and correctly tracked |
-| **Closer** | Conversion & Sales | 14 | Turns traffic into leads and leads into customers: fast response, sharp offers, pages that convert, follow-up that never stops |
-| **Media Buyer** | Paid Media | 6 | Buys attention profitably on Google, Meta and pay-per-lead platforms, scaling only what the data proves |
-| **COO-CFO** | Measurement, Money & Operations | 12 | Proves what marketing is worth, protects cash and margin, keeps the machine compliant and documented |
-| **Amplifier** | Authority, Social & Community | 16 | Earns mentions, links, press, community and creator content in the places AI engines and buyers trust |
+**How much it can do on its own depends on what you connect.** With nothing connected, it researches, audits, plans
+and drafts everything, and you post it. With your CRM, Google Business Profile, analytics, ads and website connected, it
+can carry each task through to the approval step, and run the actions you've pre-approved within the limits you set.
+See [CONNECTORS.md](plugins/get-found-os/CONNECTORS.md).
 
----
+## The Visibility Score
+
+One number the whole system works to raise: a 0–100 score across seven pillars, measured from evidence and tracked
+against your starting baseline. The audit sets the baseline (target: +20 points in 90 days); AI answers and Maps
+pillars are re-checked monthly, the full score quarterly.
+
+| Pillar | Points | What full marks look like |
+| --- | --- | --- |
+| AI answers | 20 | Named in 40%+ of buyer prompts across ChatGPT, Gemini, Perplexity, Claude and Google AI, with 95%+ accuracy |
+| Maps & listings | 15 | Top 3 in the map pack on core terms; Google profile complete and posting weekly; NAP 95%+ consistent |
+| Search | 15 | 90%+ of buyer questions mapped to a page; priority pages indexed; target terms in the top 10 |
+| Reviews & proof | 15 | 4.5+ stars on every site that matters; a new review every 2 weeks per site; every review answered within 24 hours |
+| Conversion | 15 | Leads answered in under 5 minutes; clear offer; site conversion at or above industry median |
+| Social & video | 10 | Active, consistent profiles; search-optimized video; profile-to-site clicks tracked |
+| Paid | 10 | Tracking verified; cost per lead at or under target; no wasted spend |
+
+The Command Center picks your next move with a simple formula: **Priority = (score points at stake × revenue
+weight) ÷ effort**. Gaps closest to money and easiest to fix go first — never more than three moves at a time, one
+change per channel, so you always know what caused the result.
+
+## What it can do
+
+### Nine departments, 100 skills
+
+| Department | What it owns | Skills |
+| --- | --- | --- |
+| **Scout** | Research & intelligence: visibility audit, AI search visibility, AI Overviews, keyword and prompt research, competitor gap reports, AI brand accuracy | 8 |
+| **Mapmaker** | Google Business Profile and Maps, citations and NAP cleanup, Apple Maps and Bing, schema and knowledge panel, multi-location | 10 |
+| **Reputation Desk** | Reviews on every site that matters, crisis response, case studies, referrals, NPS loop | 7 |
+| **Publisher** | Answer-first content, location pages, comparison pages, content refresh, YouTube and short-form video, FAQ hub, E-E-A-T | 17 |
+| **Engineer** | Technical SEO, speed and Core Web Vitals, tracking and attribution, AI crawler access, accessibility, safe site migrations | 10 |
+| **Closer** | Speed-to-lead, AI receptionist, nurture sequences, reactivating past customers, proposals, landing pages, lead magnets, sales scripts | 14 |
+| **Media Buyer** | Google Ads, Meta Ads, Local Services and Yelp ads, retargeting, retail media, nonprofit Ad Grants | 6 |
+| **COO-CFO** | KPI dashboard, analytics, budget and cash-flow forecast, LTV/CAC channel mix, pricing and margin, compliance, SOPs | 12 |
+| **Amplifier** | Reddit and Quora, social presence, LinkedIn authority, PR, podcasts, awards, community, partnerships, UGC and creators | 16 |
+
+Every skill runs the same four phases: measure a baseline, design the fix, build it in stages, then prove the result
+and keep it from slipping.
+
+### It watches for problems and reacts
+
+The command center chains skills together when something happens. For example:
+
+- **A 1-2 star review lands:** crisis response, then a review push, then a check that AI tools haven't picked up a
+  wrong story.
+- **A lead waits more than 5 minutes:** the speed-to-lead and AI receptionist fixes are queued.
+- **An AI engine gets your hours or prices wrong:** correction, schema update, then a citation cleanup.
+- **A competitor passes you in the map pack:** gap report, then GBP and AI-visibility work.
+- **Cost per lead jumps 25%:** an ad review, then a conversion-leak check.
+- **Peak season is 6 weeks out:** seasonal campaign, then reactivating past customers, then a newsletter.
+
+Thirteen triggers ship with it.
+
+### The autopilot (new in 1.1.0)
+
+| Feature | What it means for you |
+| --- | --- |
+| **Four approval levels** | Look, Draft, Act within limits, Ask first. Anything not written down counts as "ask first." |
+| **Shadow mode** | For the first 3 to 5 runs, everything that would leave the business waits for your approval. |
+| **Earned autonomy** | After 3 clean approvals in a row, it asks whether that kind of action (like replying to 5-star reviews) can run on its own within a daily cap. It loses that right the moment something is undone or complained about. |
+| **Never twice** | Every send or post gets a unique key that's checked first, so a retried run can't double-send. |
+| **Proof, not claims** | Work is marked done only when the result is read back from the tool. |
+| **Learns your taste** | Every approval, edit or rejection becomes a Lesson that future runs follow. |
+| **Safety limits** | Caps on tool calls, actions and daily sends per run. One word (`PAUSE`) stops everything. |
+| **Can't be hijacked** | Reviews, emails and web pages are treated as information, never as instructions. |
+| **Always asks first** | Spending money, contacting someone new, replying to low-star reviews, deleting anything, legal language. These never go on autopilot. |
+
+### Schedule
+
+| Cadence | What it does |
+| --- | --- |
+| Weekday mornings | New reviews and reply drafts, lead response times, ad spend anomalies, trigger checks |
+| Monday | The weekly cycle: top 1-3 next best moves, carried through to the approval step |
+| Thursday | One of four monthly batches (search & AI, listings & site, content & authority, customers & money), so every monthly skill runs once a month |
+| 1st business day | One-page monthly report against baseline |
+| Quarterly | Full re-score, competitor re-benchmark, new 90-day plan |
+
+## What to expect
+
+- **Week 1:** Business Brain, Visibility Score, a ranked gap list, and the first fixes drafted for approval.
+- **Month 1:** Listings and AI-accuracy errors corrected, a review and lead-response routine in place, the first
+  answer-first content published, the monthly report.
+- **Quarter 1:** A re-score against your baseline. Each skill states a target (for example, GBP calls up 30% in 90 days,
+  or a median lead response under 5 minutes). These are goals measured against your baseline, not guarantees.
+
+## You stay in control
+
+Research, drafting, internal reports and scoreboard updates run without asking. Anything that publishes, sends a
+message to a customer or prospect, spends money, or changes a live account waits for your explicit yes — batched in
+one approvals list with a one-line summary, a preview and the expected effect, so you can clear a week's worth in a
+single pass.
+
+Everything lives in a `get-found/` folder you can inspect any time:
+
+| File | What's in it |
+| --- | --- |
+| `business-brain.md` | Your master business record: offers, customers, competitors, voice, compliance rules, approval limits |
+| `scoreboard.md` | Every KPI baseline and the Visibility Score over time, with evidence and dates |
+| `action-log.md` | Every change made: date, skill, what changed, link, expected effect |
+| `approvals.md` | Everything waiting for your yes |
+
+Built-in guardrails: it never makes up data, reviews, testimonials or AI citations, and it labels estimates. It
+follows the compliance rules in your Business Brain (FTC, CAN-SPAM, TCPA, RESPA, fair housing). Targets are goals
+measured against your baseline, not guarantees.
+
+## Your data stays yours
+
+The agent keeps its working files in a `get-found/` folder that **you** choose: Google Drive, a folder on your computer,
+or a Claude project. It never stores passwords, payment details or customer personal data in those files.
+
+## Quick reference: what to say
+
+You never need to remember a skill name. These phrases cover almost everything:
+
+| Say this | What happens |
+| --- | --- |
+| "Set up Get-Found for my business" | Builds or rebuilds your Business Brain |
+| "Run my Visibility Audit" | Scores all 7 pillars and builds a 90-day plan |
+| "How visible is my business?" | Current score vs. baseline, in plain language |
+| "What's my next best move?" | Ranks gaps, recommends the top 1–3 |
+| "Run my weekly Get-Found cycle" | Executes this week's moves up to the approval gates |
+| "Put Get-Found on autopilot" | Sets up daily, weekly, monthly and quarterly runs |
+| "Show me my approvals" | Lists everything waiting for your yes |
+| "Give me my Get-Found report" | Score, work done, approvals waiting, next move |
+| "Have the [agent] handle [task]" | Sends work straight to a specialist |
+| "Help me with [any skill topic]" | Runs that skill directly |
 
 ## Install
 
-### Option A — Claude desktop / Cowork (one click)
+See **[INSTALL.md](INSTALL.md)**. The short version for Claude Code:
 
-1. **[Download `get-found-os.plugin`](https://github.com/YOUR-GITHUB-USERNAME/get-found-os/releases/latest/download/get-found-os.plugin)** from the latest release
-   (or use `dist/get-found-os.plugin` in this repo).
-2. In Claude, open **Customize → Plugins** (or drag the file into a chat) and upload `get-found-os.plugin`.
-3. Accept the plugin. All 103 skills and 9 agents appear under the `get-found-os:` namespace.
-
-### Option B — Claude Code (plugin marketplace)
-
-This repo is a Claude plugin marketplace. In Claude Code run:
-
-```bash
-/plugin marketplace add YOUR-GITHUB-USERNAME/get-found-os
+```
+/plugin marketplace add jerid-cyber/get-found-os
 /plugin install get-found-os@get-found
 ```
 
-Update later with `/plugin marketplace update get-found`.
+## License
 
-### Option C — Team / organization marketplace
-
-Admins can add `https://github.com/YOUR-GITHUB-USERNAME/get-found-os` as a GitHub-synced plugin marketplace in their
-organization's plugin settings, so everyone on the team gets the plugin and future updates automatically.
-
-Full instructions, including private-repo installs and troubleshooting: **[docs/INSTALL.md](docs/INSTALL.md)**.
-
----
-
-## Quick start
-
-Say these to Claude, in order:
-
-| Step | Say | What happens |
-| --- | --- | --- |
-| 1 | **"Set up Get-Found for my business"** | `business-brain-setup` researches your website, GBP, reviews, socials and AI answers, pre-fills the Business Brain and asks only for what it couldn't find (offers, best customers, competitors, season, compliance, approver, spend limit) |
-| 2 | **"Run my Visibility Audit"** | `get-found-visibility-audit` scores all 7 pillars and sets your baseline Visibility Score (0–100) |
-| 3 | **"Put Get-Found on a schedule"** | `get-found-heartbeat` creates daily, weekly, monthly and quarterly scheduled tasks |
-| 4 | **"What's my next best move?"** | `get-found-command-center` ranks every open gap and runs the top 1–3 moves |
-
-Or call any skill directly: *"Optimize my Google Business Profile"*, *"Fix what ChatGPT says about us"*,
-*"Build a speed-to-lead system"*, *"Launch Meta ads"*, *"Write our location pages"* …
-
-### Work files
-
-Everything the system knows and does is kept in plain Markdown in a `get-found/` folder (your connected folder, or the Claude project):
-
-| File | Purpose |
-| --- | --- |
-| `get-found/business-brain.md` | Master record: NAP+, offers & pricing, best customers, markets & competitors, brand voice, compliance rules, seasonality, connected accounts, approval rules |
-| `get-found/scoreboard.md` | Visibility Score by pillar and every KPI baseline + current value, with source and date |
-| `get-found/action-log.md` | Every change: date, skill, change, link, expected KPI effect |
-| `get-found/approvals.md` | Batch approval queue — one-line summary, preview and expected KPI effect for anything public, sent, spent or live |
-
----
-
-## How it works
-
-```
-                        ┌──────────────────────────────┐
-  Owner / Heartbeat ──▶ │   get-found-command-center   │ ◀── Event triggers (13 chains)
-                        │ reads Business Brain + Score │
-                        │ ranks gaps → next best move  │
-                        └──────────────┬───────────────┘
-                                       │ routes 1–3 moves per cycle
-   ┌────────┬──────────┬───────────┬───┴──────┬─────────┬─────────┬────────────┬─────────┬───────────┐
-   ▼        ▼          ▼           ▼          ▼         ▼         ▼            ▼         ▼
- Scout  Mapmaker  Reputation   Publisher  Engineer   Closer   Media Buyer  COO-CFO  Amplifier
-                     Desk
-   │  each agent runs its skills through the 4 phases:                                 │
-   │  1 Discovery & Assessment → 2 Architecture & Design →                             │
-   │  3 Implementation & Deployment → 4 Optimization & Governance                      │
-   └──────────────▶ scoreboard.md · action-log.md · approvals.md (waits for a yes) ◀────┘
-```
-
-### The 4-phase method (inside every skill)
-
-| Phase | Goal | Output |
-| --- | --- | --- |
-| **1. Discovery & Assessment** | Define the current state; record a baseline for every KPI | Audit report + baseline scorecard + ranked gap list |
-| **2. Architecture & Design** | Blueprint the fix; map dependencies; 3–5 item failure-mode check; owner sign-off | Plan with owners and dates + risk table + sign-off |
-| **3. Implementation & Deployment** | Build in small sprints, QA against the plan, launch in stages with rollback | Live assets + launch log |
-| **4. Optimization & Governance** | Track KPIs on cadence, compare to baseline, write an SOP, set next review | Results vs. baseline + SOP + review schedule |
-
-### Visibility Score (0–100)
-
-| Pillar | Points | Full marks look like |
-| --- | --- | --- |
-| Maps & listings | 15 | Top-3 map pack on core terms; GBP complete and posting weekly; NAP 95%+ consistent; Apple/Bing verified |
-| AI answers | 20 | Named in 40%+ of buyer prompts across ChatGPT, Gemini, Perplexity, Claude and Google AI; 95%+ accurate |
-| Search | 15 | 90%+ of buyer intents mapped to a page; priority pages indexed; target terms top 10 |
-| Reviews & proof | 15 | 4.5+ on every site that matters; a new review every 2 weeks per site; 100% replies in 24h |
-| Social & video | 10 | Active, consistent profiles; search-optimized video; profile-to-site clicks tracked |
-| Paid | 10 | Tracking verified; cost per lead at or below target; no wasted spend |
-| Conversion | 15 | Lead response under 5 minutes; clear offer; site conversion at or above industry median |
-
-Unmeasured pillars score 0 until evidence exists. Full re-score quarterly; AI answers and Maps re-scored monthly.
-
-### Next-best-move formula
-
-```
-priority = (Visibility Score points at stake × revenue weight) ÷ effort
-```
-
-- **Revenue weight:** 3 = sits between a buyer and a booked job (conversion, speed-to-lead, maps, reviews) · 2 = drives qualified traffic · 1 = long-term authority
-- **Effort:** 1 = under an hour, no human step · 2 = a day or one small human step · 3 = multi-week or developer/owner-heavy
-- Ties go to the lower Get-Found rank. Max 3 moves per cycle, one change at a time per channel so results can be attributed.
-
-### Event triggers & heartbeat
-
-13 conditions automatically queue skill chains — e.g. a 1–2★ review runs `reputation-crisis-response → reviews-everywhere-engine → ai-brand-accuracy-correction`;
-a 25%+ cost-per-lead spike runs `meta-ads-launch-scale → google-ads-search-launcher → conversion-leak-finder → retargeting-architecture`.
-The heartbeat schedules 8 daily, 14 weekly, 66 monthly and 12 quarterly skill checks. Full tables: **[docs/WORKFLOWS.md](docs/WORKFLOWS.md)**.
-
----
-
-## Connectors
-
-The agents work with whatever is connected and fall back to exports, public data and web research. More connections = less asking.
-
-| Need | Recommended connector | Used by | Without it |
-| --- | --- | --- | --- |
-| Search, ads and analytics data | Supermetrics (Google Ads, Meta Ads, GA4, Search Console) or native Google connectors | Scout, Engineer, Media Buyer, COO-CFO | Owner exports CSVs |
-| CRM, SMS, email, pipelines, review requests | GoHighLevel (or Lofty/HubSpot) via connector or Zapier | Closer, Reputation Desk | Agent drafts; owner sends |
-| Email and calendar | Gmail and Google Calendar | Closer, Reputation Desk, Amplifier | Drafts delivered in chat |
-| Files and reports | Google Drive (or a connected folder) | All | Files delivered in chat |
-| Website | WordPress / Webflow / Shopify connector | Publisher, Engineer | Copy and code delivered for manual paste |
-| Google Business Profile | GBP connector or Zapier | Mapmaker, Reputation Desk | Agent drafts posts/replies; owner posts |
-| Keyword and SERP data | DataForSEO, Semrush or Ahrefs connector | Scout, Publisher | Web research and Search Console only |
-| AI engine testing | Web search plus manual prompt runs (ChatGPT, Gemini, Perplexity) | Scout | Agent provides the prompt set; owner pastes results |
-| Images and video | Image/video generation connector (e.g. OpenArt) | Publisher, Amplifier | Shot lists and briefs only |
-
-Connect tools in Claude's connector settings. **Never paste passwords or API keys into chat or into the Business Brain.**
-
----
-
-## Safety & guardrails
-
-- **Approval gates are never skipped.** Publishing anything public, messaging customers or prospects, changing a live account or spending money requires an explicit yes from the approver named in the Business Brain. Approvals are batched in `approvals.md` so the owner can clear many in one pass.
-- **No fabrication.** Never invents data, reviews, testimonials, AI citations or results; estimates are labeled.
-- **Compliance built in.** FTC endorsement rules, CAN-SPAM, TCPA, privacy law and industry rules (RESPA, fair housing, HIPAA as applicable), plus platform policies.
-- **No secrets stored.** The Business Brain records *which tool* holds payment details, passwords or customer data — never the data itself.
-- **Targets are goals, not guarantees** — always measured against the Phase 1 baseline.
-
----
-
-## Repository layout
-
-```
-get-found-os/
-├── .claude-plugin/
-│   └── marketplace.json          # Makes this repo an installable Claude plugin marketplace
-├── plugins/
-│   └── get-found-os/             # ← the plugin itself (upload/zip this folder)
-│       ├── .claude-plugin/plugin.json
-│       ├── README.md
-│       ├── CONNECTORS.md
-│       ├── agents/               # 9 department agents
-│       └── skills/               # 103 skills (100 ranked + 3 core), each skills/<name>/SKILL.md
-│           ├── business-brain-setup/references/business-brain-template.md
-│           └── get-found-command-center/references/{skill-catalog.md, visibility-score.md}
-├── dist/get-found-os.plugin      # Prebuilt installable plugin file
-├── docs/                         # INSTALL, ARCHITECTURE, AGENTS, WORKFLOWS, SKILLS (full catalog), DEPLOY
-├── scripts/                      # validate.py, build_catalog.py, package.sh, set-github-owner.sh
-└── .github/workflows/            # CI validation + automatic release packaging
-```
-
----
-
-## Maintaining & releasing
-
-```bash
-python3 scripts/validate.py        # check manifests, 103 skills, 9 agents, all cross-references
-python3 scripts/build_catalog.py   # regenerate docs/SKILLS.md after editing skills
-bash scripts/package.sh            # build dist/get-found-os.plugin
-git tag v1.0.1 && git push --tags  # GitHub Actions builds and attaches the .plugin to a Release
-```
-
-When you change the plugin, bump `version` in **both** `plugins/get-found-os/.claude-plugin/plugin.json` and
-`.claude-plugin/marketplace.json`, and add an entry to [CHANGELOG.md](CHANGELOG.md). See **[docs/DEPLOY.md](docs/DEPLOY.md)**.
-
----
-
-## Author & license
-
-Created by **Jerid Wempen** — [TitanOne Realty Group](https://titanonerealty.com) / TitanOne Media.
-Mission: help businesses of every industry get found, get chosen and grow.
-
-Licensed under the [PolyForm Internal Use License 1.0.0](LICENSE) — free to use for your internal operations, including at work; you may not distribute, share copies, or sell it. © 2026 Jerid Wempen / TitanOne.
+Licensed under the [PolyForm Internal Use License 1.0.0](LICENSE.md) — free to use for your internal operations,
+including at work; you may not distribute, share copies, or sell it. © 2026 Jerid Wempen / TitanOne. Need different
+terms? Contact Jerid Wempen.
