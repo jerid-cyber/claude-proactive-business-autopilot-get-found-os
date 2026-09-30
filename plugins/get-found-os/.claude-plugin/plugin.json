@@ -1,0 +1,21 @@
+{
+  "name": "get-found-os",
+  "version": "1.0.0",
+  "description": "Get-Found Full OS: All 100 Get-Found skills run by one orchestrator and nine specialist department agents.",
+  "author": {
+    "name": "Jerid Wempen",
+    "url": "https://titanonerealty.com"
+  },
+  "license": "Proprietary",
+  "keywords": [
+    "marketing",
+    "seo",
+    "local-seo",
+    "ai-search",
+    "geo",
+    "aeo",
+    "lead-generation",
+    "small-business",
+    "get-found"
+  ]
+}

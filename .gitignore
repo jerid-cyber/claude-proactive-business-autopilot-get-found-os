@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+*.bak
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+# Client work files created while testing — never commit a real business's data
+get-found/

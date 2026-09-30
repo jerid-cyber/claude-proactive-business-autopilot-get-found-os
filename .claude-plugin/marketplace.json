@@ -1,0 +1,28 @@
+{
+  "name": "get-found",
+  "owner": {
+    "name": "Jerid Wempen",
+    "url": "https://titanonerealty.com"
+  },
+  "metadata": {
+    "description": "Get-Found OS: a 100-skill AI marketing operating system that helps any business get found in Google, Maps and AI answers, get chosen, and grow.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "get-found-os",
+      "source": "./plugins/get-found-os",
+      "description": "Get-Found Full OS: All 100 Get-Found skills run by one orchestrator and nine specialist department agents.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Jerid Wempen",
+        "url": "https://titanonerealty.com"
+      },
+      "homepage": "https://github.com/YOUR-GITHUB-USERNAME/get-found-os",
+      "repository": "https://github.com/YOUR-GITHUB-USERNAME/get-found-os",
+      "license": "Proprietary",
+      "category": "marketing",
+      "keywords": ["marketing", "seo", "local-seo", "ai-search", "geo", "aeo", "lead-generation", "small-business", "get-found"]
+    }
+  ]
+}
