@@ -11,7 +11,7 @@ One orchestrator · nine specialist department agents · 100 ranked skills · on
 ![Skills](https://img.shields.io/badge/skills-103-16a34a)
 ![Agents](https://img.shields.io/badge/agents-9-9333ea)
 ![Claude](https://img.shields.io/badge/Claude-Cowork%20%7C%20Code-d97706)
-![License](https://img.shields.io/badge/license-Proprietary-6b7280)
+![License: PolyForm Noncommercial](https://img.shields.io/badge/license-PolyForm%20Noncommercial-lightgrey.svg)
 [![Validate](https://github.com/YOUR-GITHUB-USERNAME/get-found-os/actions/workflows/validate.yml/badge.svg)](https://github.com/YOUR-GITHUB-USERNAME/get-found-os/actions/workflows/validate.yml)
 
 **[⬇ Download the plugin](https://github.com/YOUR-GITHUB-USERNAME/get-found-os/releases/latest/download/get-found-os.plugin)** ·
@@ -259,5 +259,4 @@ When you change the plugin, bump `version` in **both** `plugins/get-found-os/.cl
 Created by **Jerid Wempen** — [TitanOne Realty Group](https://titanonerealty.com) / TitanOne Media.
 Mission: help businesses of every industry get found, get chosen and grow.
 
-**Proprietary — © 2026 Jerid Wempen. All rights reserved.** See [LICENSE](LICENSE). Public visibility of this repository
-does not grant a license to copy, modify, resell or redistribute the plugin.
+Licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE) — free for personal learning & tinkering, school or research projects, and fully non-profit operations. Commercial use (selling the software, embedding it in commercial products, or using it at a for-profit job) requires written permission. © 2026 Jerid Wempen / TitanOne.
